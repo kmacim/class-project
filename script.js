@@ -4,7 +4,7 @@
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // messages cleared
+  // messages cleared and white space trimmed
   document.querySelectorAll(".error").forEach(el => el.textContent = "");
   document.getElementById("formMessage").textContent = "";
 
@@ -16,7 +16,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   let isValid = true;
 
-  // Name validation
+  // Name validation use of If statement for decision while inform the customer
   if (name === "") {
     showError("name", "Name is required.");
     isValid = false;
@@ -61,7 +61,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
       `Thanks, ${customer.name}! We'll contact you via ${customer.preferredContact}.`;
   }
 });
-
+//Error  decisions delivering message when user doesnt fill in any form boxes
 function showError(fieldId, message) {
   let field = document.getElementById(fieldId);
   let error = field.nextElementSibling;
@@ -85,7 +85,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-//Object use for products
+////create map object for customers  the different product Uber has for usage
 let products = [
   {
     name: "UberX",
@@ -103,7 +103,7 @@ let products = [
     description: "Low-emission rides in hybrid and electric vehicles."
   }
 ];
-// Connects to Html page for product switching
+// Connects to Html page for product switching referencing product name when select and display product
 function displayProduct(index) {
   let product = products[index];
   if(!product) return;
@@ -112,7 +112,7 @@ function displayProduct(index) {
   document.getElementById("product-image").alt = product.name;
   document.getElementById("product-description").textContent = product.description;
 }
-// Changes product images
+// Changes product images when product are clicked
 document.getElementById("product-buttons").addEventListener("click", (e) => {
   if (e.target.tagName ==="BUTTON") {
     let index = parseInt(e.target.getAttribute("data-id"));
@@ -121,7 +121,7 @@ document.getElementById("product-buttons").addEventListener("click", (e) => {
 });
 
 
-
+//this randomizes number 1 to ten  but when match show blue when numbers match several decision statment used
 document.getElementById("guessBtn").addEventListener("click", function () {
   let userGuess = parseInt(document.getElementById("fareGuess").value, 10);
   let randomFare = Math.floor(Math.random() * 10) + 1;

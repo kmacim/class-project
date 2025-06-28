@@ -73,12 +73,12 @@ body {
   min-width: 500px;
   padding-left: 10px;
 }
-
+/* dark code is in tandem with js to change from light to dark */
 .dark-mode {
   background-color: #121212;
   color: white;
 }
-/* designing and placements of element/objects */
+/* mostly all my css is designing and placements of element/objects with images include */
 button {
   margin: 1em 0;
 }
@@ -136,19 +136,15 @@ text-decoration: none;
   height: auto;
   border-radius: 8px;
 }
-
+/* Response with the error codes in js */
 .error {
   color: red;
   font-size: 0.9em;
   margin-left: 10px;
 }
-
+/* work with styling of when activae during playing the game */
 #guessResult {
   font-weight: bold;
   margin-top: 10px;
 }
 
-#iphone{
-
-  padding-left: 25px;
-}
