@@ -1,0 +1,154 @@
+/* -------------------- IMPORTED FONTS -------------------- */
+
+
+/*-------------------- CSS RESET --------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* -------------------- ROOT VARIABLES  -------------------- */
+:root {
+    
+      font-size: 1.25em;  
+    
+    --black: #2B2B2B;
+    --white: #FAF9F6;
+
+
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(14, 12, 12);
+  color: rgb(247, 235, 235);
+  max-width: 1280px;
+  margin: 0 auto;
+  min-width: 500px;
+  padding-left: 10px;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+/* designing and placements of element/objects */
+button {
+  margin: 1em 0;
+}
+h1 {
+    font-size: 3em;
+     text-align: center; 
+    padding-top: 25px;
+    font-style: italic;
+}
+
+#themeToggle{
+    margin-left: 600px;
+}
+nav {
+    padding-left: 600px;
+    
+}
+
+h2{
+     font-size: 1.5em;
+     padding-bottom: 5px;
+}
+#hero{
+  text-align: center ;
+  padding-bottom: 10px;
+}
+
+h3{
+
+  display: none;
+}
+ul {
+
+    padding-top: 5px;
+}
+.tphone{
+
+  position:relative;
+  left: 600px;
+}
+li{
+   padding-top: 5px; 
+}
+ li a{
+    color:var(--white);
+text-decoration: none;
+
+}
+#product-buttons{
+    padding-left: 750px;
+}
+
+#product-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+#guessResult {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#iphone{
+
+  padding-left: 25px;
+}
